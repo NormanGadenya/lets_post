@@ -8,8 +8,7 @@ from .models import Post
 
 def home(request):
     context = {
-        'posts': Post.objects.all()
-,
+        'posts': Post.objects.all(),
         'title': 'books'
     }
     return render(request, 'blog/home.html', context)
